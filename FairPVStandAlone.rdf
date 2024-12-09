@@ -1,0 +1,1579 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ugenc/ontologies/2024/11/FairPVStandalone/"
+     xml:base="http://www.semanticweb.org/ugenc/ontologies/2024/11/FairPVStandalone/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ugenc/ontologies/2024/11/FairPVStandalone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeObservation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes"/>
+    
+
+
+    <!-- https://w3id.org/seas/connectedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/connectedTo"/>
+    
+
+
+    <!-- https://w3id.org/seas/connectsPrimarilyAt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/connectsPrimarilyAt"/>
+    
+
+
+    <!-- https://w3id.org/seas/connectsSecondarilyAt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/connectsSecondarilyAt"/>
+    
+
+
+    <!-- https://w3id.org/seas/isPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/isPropertyOf"/>
+    
+
+
+    <!-- https://w3id.org/seas/primarilyConnectedThrough -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/primarilyConnectedThrough"/>
+    
+
+
+    <!-- https://w3id.org/seas/producedElectricPower -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/producedElectricPower"/>
+    
+
+
+    <!-- https://w3id.org/seas/secondarilyConnectedThrough -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/secondarilyConnectedThrough"/>
+    
+
+
+    <!-- https://w3id.org/seas/storageElectricPower -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/storageElectricPower"/>
+    
+
+
+    <!-- https://w3id.org/seas/subElectricPowerSystemOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/subElectricPowerSystemOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Ceramics -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Ceramics">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Material"/>
+        <dc:description>A ceramic is any of the various hard, brittle, heat-resistant and corrosion-resistant materials made by shaping and then firing an inorganic, nonmetallic material, such as clay, at a high temperature.</dc:description>
+        <rdfs:label>Ceramics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Composites -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Composites">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Material"/>
+        <dc:description>A composite material is a material which is produced from two or more constituent materials.</dc:description>
+        <rdfs:label>Composites</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Glasses -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Glasses">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Material"/>
+        <dc:description>Glass is a non-crystalline, often transparent, amorphous solid that has widespread practical, technological, and decorative use.</dc:description>
+        <rdfs:label>Glasses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Material -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Material">
+        <owl:disjointWith rdf:resource="https://schema.org/Brand"/>
+        <dc:description>Materials used in the construction of solar panels, including glass, silicon, and polymers.</dc:description>
+        <rdfs:label>Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Metals -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Metals">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Material"/>
+        <dc:description>Metals are elementary substances, such as gold, silver and copper. They are crystalline when solid and naturally occur in minerals. They are often good conductors of electricity and heat, shiny and malleable.</dc:description>
+        <rdfs:label>Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Nanomaterials -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Nanomaterials">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Material"/>
+        <dc:description>Nanomaterials can be defined as materials possessing, at minimum, one external dimension measuring 1-100nm.</dc:description>
+        <rdfs:label>Nanomaterials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://matonto.org/ontologies/matonto#Polymers -->
+
+    <owl:Class rdf:about="http://matonto.org/ontologies/matonto#Polymers">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Material"/>
+        <dc:description>A polymer is a substance or material consisting of very large molecules called macromolecules, composed of many repeating subunits.</dc:description>
+        <rdfs:label>Polymers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://mmisw.org/ont/univmemphis/sensor#Humidity -->
+
+    <owl:Class rdf:about="http://mmisw.org/ont/univmemphis/sensor#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <dc:description>A humidity sensor.</dc:description>
+        <rdfs:label>Humidity Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Alloy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Alloy">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Metals"/>
+        <dc:description>A metal alloy is a substance that combines more than one metal or mixes a metal with other non-metallic elements.</dc:description>
+        <rdfs:label>Alloy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Aluminium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Aluminium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Aluminium (aluminum in American and Canadian English) is a chemical element with the symbol Al and atomic number 13.  Aluminium visually resembles silver, both in its color and in its great ability to reflect light. It is soft, non-magnetic and ductile.</dc:description>
+        <rdfs:label>Aluminium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Brass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Brass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Alloy"/>
+        <dc:description>Brass is an alloy of copper and zinc, in proportions which can be varied to achieve different mechanical, electrical, and chemical properties. It is a substitutional alloy: atoms of the two constituents may replace each other within the same crystal structure.</dc:description>
+        <rdfs:label>Brass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Cadmium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Cadmium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Cadmium is a chemical element with the symbol Cd and atomic number 48.
+Cadmium is a soft, malleable, ductile, silvery-white divalent metal. It is similar in many respects to zinc but forms complex compounds.[5] Unlike most other metals, cadmium is resistant to corrosion and is used as a protective plate on other metals.</dc:description>
+        <rdfs:label>Cadmium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Capacitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Capacitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/HardwareComponent"/>
+        <dc:description>A capacitor is a small piece of electrical hardware that can hold electrical energy within a circuit or field.</dc:description>
+        <rdfs:label>Capacitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/CarbonSteel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/CarbonSteel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Alloy"/>
+        <dc:description>Carbon steel is a steel with carbon content from about 0.05 up to 2.1 percent by weight. The definition of carbon steel from the American Iron and Steel Institute (AISI) states:
+
+- no minimum content is specified or required for chromium, cobalt, molybdenum, nickel, niobium, titanium, tungsten, vanadium, zirconium, or any other element to be added to obtain a desired alloying effect;
+- the specified minimum for copper does not exceed 0.40%;
+- or the maximum content specified for any of the following elements does not exceed the percentages noted: manganese 1.65%; silicon 0.60%; copper 0.60%.</dc:description>
+        <rdfs:label>Carbon Steel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Certification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Certification">
+        <dc:description>Device or component certification.</dc:description>
+        <rdfs:label>Certification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/CircularStrategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/CircularStrategy">
+        <dc:description xml:lang="en">A range of efficiency and productivity enhancing activities carried out within the Circular Economy (CE).</dc:description>
+        <rdfs:label xml:lang="en">Circular Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Client">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">An agent seeking a service for his/her device.</dc:description>
+        <rdfs:label>Client</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Cobalt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Cobalt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Magnesium is a chemical element with the symbol Mg and atomic number 12. Elemental magnesium is a gray-white lightweight metal, two-thirds the density of aluminium. Magnesium has the lowest melting (923 K (650 °C)) and the lowest boiling point 1,363 K (1,090 °C) of all the alkaline earth metals</dc:description>
+        <rdfs:label>Magnesium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Complete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Complete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Status"/>
+        <dc:description>A status has been completed.</dc:description>
+        <rdfs:label>Complete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/CoolingRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/CoolingRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/FunctionalIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Copper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Copper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Copper is a chemical element with the symbol Cu and atomic number 29. It is a soft, malleable, and ductile metal with very high thermal and electrical conductivity. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement.</dc:description>
+        <rdfs:label>Copper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/DataProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/DataProvider">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">An agent providing data to another agent.</dc:description>
+        <rdfs:label xml:lang="en">Data Provider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/DataTransportRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/DataTransportRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/FunctionalIndicator"/>
+        <dc:description>A measure of data that is transferred from one location to another in a given amount of time.</dc:description>
+        <rdfs:label>Data Transport Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Delayed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Delayed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Status"/>
+        <dc:description>A process that has been delayed before or while running.</dc:description>
+        <rdfs:label>Delayed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/DeliveryTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/DeliveryTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/EconomicalIndicator"/>
+        <dc:description>The amount of time it takes for an ICT device or component to be delivered.</dc:description>
+        <rdfs:label>Delivery Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/DeviceOwner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/DeviceOwner">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">The owner of a specific hardware device. A client might request device repair on the behalf of the device&apos;s owner.</dc:description>
+        <rdfs:label xml:lang="en">Device Owner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/DeviceSpeed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/DeviceSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/FunctionalIndicator"/>
+        <dc:description>The speed with which HDs can copy information. Hard drive speeds are measured in megabytes per second or MBps.</dc:description>
+        <rdfs:label>Device Speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/DigitalProductPassport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/DigitalProductPassport">
+        <dc:description>A collection of static and dynamic data associated with an ICT device that can be interpreted by machines and humans in order to support sustainable decision making.</dc:description>
+        <rdfs:label>Digital Product Passport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/EconomicalIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/EconomicalIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Indicator"/>
+        <dc:description>Economic indicators allow analysis of economic performance.</dc:description>
+        <rdfs:label>Economical Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/EnergyConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/EnergyConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>Energy consumption refers to the energy usedby a device in operation, which may be an average of different modes of operation (measured in kW).</dc:description>
+        <rdfs:label xml:lang="en">Energy Consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/EnvironmentalImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/EnvironmentalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>Life Cycle Assessment (LCA) results in midpoints (e.g. ozone depletion, land use) or endpoints (e.g health, eco-toxicity, resource use), or single endpoint (aggregate Pt)</dc:description>
+        <rdfs:label>Environmental Impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Reason"/>
+        <dc:description>A failure of an ICT&apos;s hardware component that leads to applying a circular strategy.</dc:description>
+        <rdfs:label>Failure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Ferrous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Ferrous">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Metals"/>
+        <dc:description>Ferrous metals are any metal that contains iron, such as stainless steel.</dc:description>
+        <rdfs:label>Ferrous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/FunctionalIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/FunctionalIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Indicator"/>
+        <dc:description>Indicators related to the functional characteristics of ICT devices.</dc:description>
+        <rdfs:label>Functional Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Gold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Gold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Gold is a chemical element with the symbol Au (from Latin: aurum) and atomic number 79. Gold is the most malleable of all metals and is a relatively rare material.</dc:description>
+        <rdfs:label>Gold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/GreenHouseGasEmissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/GreenHouseGasEmissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>The emission into the earth&apos;s atmosphere of any of various gases such as carbon dioxide (CO₂), that contribute to the greenhouse effect and climate change.</dc:description>
+        <rdfs:label xml:lang="en">Green House Gas Emissions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/HardwareComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/HardwareComponent">
+        <dc:description>Hardware components are the physical parts of ICT devices such as laptops, data servers, hard drives etc.</dc:description>
+        <rdfs:label>Hardware Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/InProgress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/InProgress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Status"/>
+        <dc:description>A process in progress (not complete yet).</dc:description>
+        <rdfs:label>In Progress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Indicator">
+        <dc:description xml:lang="en">An indicator used to measure how circular a device is.</dc:description>
+        <rdfs:label xml:lang="en">Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Inductor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Inductor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/HardwareComponent"/>
+        <dc:description>An inductor, or induction coil, stores electrical energy in a magnetic field.</dc:description>
+        <rdfs:label>Inductor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Iron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Iron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Ferrous"/>
+        <dc:description>Iron is a chemical element with symbol Fe and atomic number 26.  Iron is the most widely used of all the metals, accounting for over 90% of worldwide metal production. 
+Its low cost and high strength often make it the material of choice material to withstand stress or transmit forces, such as the construction of machinery and machine tools, rails, automobiles, ship hulls, concrete reinforcing bars, and the load-carrying framework of buildings.</dc:description>
+        <rdfs:label>Iron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Lead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Lead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and also has a relatively low melting point. The largest use of lead in the early 21st century is in lead–acid batteries.</dc:description>
+        <rdfs:label>Lead</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Lithium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Lithium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Lithium is a chemical element with the symbol Li and atomic number 3. It is a soft, silvery-white alkali metal. Under standard conditions, it is the least dense metal and the least dense solid element. 
+
+Lithium and its compounds have several industrial applications, including heat-resistant glass and ceramics, lithium grease lubricants, flux additives for iron, steel and aluminium production, lithium metal batteries, and lithium-ion batteries. These uses consume more than three-quarters of lithium production</dc:description>
+        <rdfs:label>Lithium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Magnesium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Magnesium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Magnesium is a chemical element with the symbol Mg and atomic number 12. It is a shiny gray metal having a low density, low melting point and high chemical reactivity. Like the other alkaline earth metals (group 2 of the periodic table) it occurs naturally only in combination with other elements .</dc:description>
+        <rdfs:label>Magnesium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description xml:lang="en">The variety of support services provided for the optimization and/or repair of server, network and storage hardware.</dc:description>
+        <rdfs:label xml:lang="en">Maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description>An entity such as a company that produces goods in large numbers, usually in a factory using machines.</dc:description>
+        <rdfs:label>Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/MaterialCircularity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/MaterialCircularity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>Circular materials are fully recycled or renewable, and fully reused. Materials can be partially circular, which is expressed as the percentage material circularity.</dc:description>
+        <rdfs:label>Material Circularity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/MaterialCriticality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/MaterialCriticality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>Identification of critical raw materials and their supply risk, vulnerability to supply restriction, and environmental implications. Possible to express as low-med-high in aggregate..</dc:description>
+        <rdfs:label>Material Criticality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Memory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Memory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/FunctionalIndicator"/>
+        <dc:description>The memory available for usage in an ICT device such as laptop.</dc:description>
+        <rdfs:label>Memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Mercury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Mercury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Mercury is a chemical element with the symbol Hg and atomic number 80. It is also known as quicksilver and was formerly named hydrargyrum from the Greek words, hydor and argyros.</dc:description>
+        <rdfs:label>Mercury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Nickel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Nickel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Nickel is a chemical element with symbol Ni and atomic number 28. It is a silvery-white lustrous metal with a slight golden tinge. 
+
+Nickel is used in many recognizable industrial and consumer products, including stainless steel, alnico magnets, coinage, rechargeable batteries (e.g. nickel-iron), electric guitar strings, microphone capsules, plating on plumbing fixtures,[86] and special alloys such as permalloy, elinvar, and invar.</dc:description>
+        <rdfs:label>Nickel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/NonFerrous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/NonFerrous">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Metals"/>
+        <dc:description>Non-ferrous metals do not contain iron.</dc:description>
+        <rdfs:label>Non Ferrous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/PartsAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/PartsAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/EconomicalIndicator"/>
+        <dc:description>The availability status of parts for purchase.</dc:description>
+        <rdfs:label>Parts Availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/FunctionalIndicator"/>
+        <dc:description>Performance is a rating of how fast the ICT device performs its operations and if it encounters errors.</dc:description>
+        <rdfs:label>Performance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Plastic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Plastic">
+        <rdfs:subClassOf rdf:resource="http://matonto.org/ontologies/matonto#Polymers"/>
+        <dc:description>Plastics are a wide range of synthetic or semi-synthetic materials that use polymers as a main ingredient.</dc:description>
+        <rdfs:label>Plastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Platinum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Platinum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Platinum is a chemical element with the symbol Pt and atomic number 78. It is a dense, malleable, ductile, highly unreactive, precious, silverish-white transition metal. Platinum is one of the least reactive metals. It has remarkable resistance to corrosion, even at high temperatures, and is therefore considered a noble metal.</dc:description>
+        <rdfs:label>Platinum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/PrimaryResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/PrimaryResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>The amount of resources (expressed in kg) used in the product.</dc:description>
+        <rdfs:label>Primary Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Procurer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Procurer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">An agent that has the task to procurer service or devices.</dc:description>
+        <rdfs:label xml:lang="en">Procurer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/ProductCircularity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/ProductCircularity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <dc:description>Percentage of circular material flow in the total products in use flow. Which is equal to the weighted average of the material circularity of all parts.</dc:description>
+        <rdfs:label>Product Circularity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/PurchaseCost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/PurchaseCost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/EconomicalIndicator"/>
+        <dc:description>The total cost for the item(s) or service purchased including taxes, shipping costs and other fees.</dc:description>
+        <rdfs:label xml:lang="en">Purchase Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Reason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Reason">
+        <dc:description>The reason/precondition for a circular strategy.</dc:description>
+        <rdfs:label>Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Recovery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Recovery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description xml:lang="en">Any operation with the primary aim of reversing obsolescence.</dc:description>
+        <rdfs:label xml:lang="en">Recovery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Recycler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Recycler">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">The agent responsible for the recycling of a device.</dc:description>
+        <rdfs:label xml:lang="en">Recycler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Recycling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Recycling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description xml:lang="en">The recovery of materials from particular classes of products. For circular use recycling must be postponed as long as possible, as recycling of materials implies loss of function and value. Nevertheless, recycling is the last option when products or parts can no longer be kept in a functional
+condition.</dc:description>
+        <rdfs:label xml:lang="en">Recycling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Refurbisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Refurbisher">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">The agent responsible for the refurbishment of a device.</dc:description>
+        <rdfs:label xml:lang="en">Refurbisher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Refurbishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Refurbishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description xml:lang="en">Te process of returning a used product to a satisfactory working condition that may be inferior to the original specification.</dc:description>
+        <rdfs:label xml:lang="en">Refurbishment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Remanufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Remanufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">The agent responsible for remanufacturing a device.</dc:description>
+        <rdfs:label xml:lang="en">Remanufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Remanufacturing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Remanufacturing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description xml:lang="en">Returning a used product to at least its original performance with a warranty that is equivalent or better than that of the newly manufactured product.</dc:description>
+        <rdfs:label xml:lang="en">Remanufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Repair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Repair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description xml:lang="en">To restore (something damaged, faulty, or worn) to a good condition.</dc:description>
+        <rdfs:label xml:lang="en">Repair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Repairer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Repairer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Role"/>
+        <dc:description xml:lang="en">The agent responsible for the repairment of a device.</dc:description>
+        <rdfs:label xml:lang="en">Repairer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Reuse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Reuse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/CircularStrategy"/>
+        <dc:description>Reuse is the action or practice of using an item, whether for its original purpose (conventional reuse) or to fulfill a different function.</dc:description>
+        <rdfs:label>Reuse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Silver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Silver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Silver is a chemical element with the symbol Ag and atomic number 47. A soft, white, lustrous transition metal, it exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal.</dc:description>
+        <rdfs:label>Silver</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/SoftwareSupport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/SoftwareSupport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/FunctionalIndicator"/>
+        <dc:description>Software support is a service provided by a software publisher that delivers technical product help and advice to registered users.</dc:description>
+        <rdfs:label>Software Support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Status">
+        <dc:description>Represents the status of a process.</dc:description>
+        <rdfs:label>Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Suspended -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Suspended">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Status"/>
+        <dc:description>A process that has been suspended.</dc:description>
+        <rdfs:label>Suspended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/SustainabilityIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Indicator"/>
+        <dc:description>Indicators used to assess how sustainable an ICT device is.</dc:description>
+        <rdfs:label>Sustainability Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Terminated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Terminated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/Status"/>
+        <terms:description>A process that has been terminated.</terms:description>
+        <rdfs:label>Terminated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Tin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Tin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/NonFerrous"/>
+        <dc:description>Tin is a chemical element with the symbol Sn (from Latin: stannum) and atomic number 50. Tin is a soft, malleable, ductile and highly crystalline silvery-white metal. Tin has long been used in alloys with lead as solder.</dc:description>
+        <rdfs:label>Tin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Warranty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Warranty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/EconomicalIndicator"/>
+        <dc:description>A written guarantee, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.</dc:description>
+        <rdfs:label>Warranty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/RePlanIT/Waste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/RePlanIT/Waste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/SustainabilityIndicator"/>
+        <rdfs:label xml:lang="en">Waste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Role -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Role">
+        <dc:description xml:lang="en">A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</dc:description>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/RePlanIT/HardwareComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observes"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a Stimulus, e.g., a change in the environment, or Input data composed from the Results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</dc:description>
+        <rdfs:comment>Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform).</rdfs:comment>
+        <rdfs:label>Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://mmisw.org/ont/univmemphis/sensor/Temperature -->
+
+    <owl:Class rdf:about="https://mmisw.org/ont/univmemphis/sensor/Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <dc:description>A temperature sensor.</dc:description>
+        <rdfs:label>Temperature Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Brand -->
+
+    <owl:Class rdf:about="https://schema.org/Brand"/>
+    
+
+
+    <!-- https://schema.org/City -->
+
+    <owl:Class rdf:about="https://schema.org/City">
+        <rdfs:subClassOf rdf:resource="https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Location"/>
+        <dc:description>An inhabited place of greater size, population, or importance than a town or village.</dc:description>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/AlternatingCurrentConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/AlternatingCurrentConnection"/>
+    
+
+
+    <!-- https://w3id.org/seas/AlternatingCurrentConnectionPoint -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/AlternatingCurrentConnectionPoint"/>
+    
+
+
+    <!-- https://w3id.org/seas/AngleProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/AngleProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and measure the angle property .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Angle Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/Battery -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Battery">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerStorageSystem"/>
+        <rdfs:comment>The class of batteries, which are electric power storage systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/CurrentProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/CurrentProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and use a quantity dimension of electric current.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Current Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/DirectCurrentConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/DirectCurrentConnection"/>
+    
+
+
+    <!-- https://w3id.org/seas/DirectCurrentConnectionPoint -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/DirectCurrentConnectionPoint"/>
+    
+
+
+    <!-- https://w3id.org/seas/EfficiencyProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/EfficiencyProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">Efficiency signifies a level of performance that describes a process that uses the lowest amount of inputs to create the greatest 
+                amount of outputs. Efficiency relates to the use of all inputs in producing any given 
+                output, including personal time and energy. Efficiency is a measurable concept that can be 
+                determined by determining the ratio of useful output to total input. It minimizes the waste 
+                of resources such as physical materials, energy and time, while successfully achieving the 
+                desired output.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Efficiency Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricConductanceProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricConductanceProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and have a quantity kind of electric conductance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Electric Conductance Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricEnergyProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricEnergyProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and have a quantity kind of electric energy.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Electric Energy Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricPowerProducer -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricPowerProducer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/producedElectricPower"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An electric power producer is an electric power system that is capable of producing electricity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Electric Power Producer</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricPowerProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricPowerProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and have a quantity kind of electric power.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Electric Power Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricPowerStorageSystem -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricPowerStorageSystem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/storageElectricPower"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An electric power storage system is an electric power system that is capable of storing electricity. Usually a battery, an electric vehicle, or a microgrid</rdfs:comment>
+        <rdfs:comment>The class of electric power systems, i.e., systems that exchange electricity (i.e., electric power) with other systems.
+
+Electric power systems may consume, produce, or store electricity. Such systems are defined by subclasses of electric power system. Electric power systems that dissipate energy are thermodynamic systems (i.e., they can then dissipate heat).
+
+Electric power systems can exchange electricity with other electric power systems. These exchange are only possible through electrical connections between electric power systems.
+
+Electric power systems can have sub power systems:
+
+The consumed or produced electricity of subsystems contribute to the consumed or produced electricity of the supersystem;
+the stored electricity of subsystems contribute to the stored electricity of super systems.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Electric Power Storage System</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricPowerSystem -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricPowerSystem"/>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricPowerTransformer -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricPowerTransformer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerTransmissionSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/connectsPrimarilyAt"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricalConnectionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/connectsSecondarilyAt"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricalConnectionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/primarilyConnectedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricalConnection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/secondarilyConnectedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricalConnection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An electric power transformer is an electric power system that is capable of transforming electricity within a power network, between a primary connection point and a secondary connection point.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Electric Power Transformer</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricPowerTransmissionSystem -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricPowerTransmissionSystem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+        <rdfs:comment xml:lang="en">An electric power transmission system is an electric power system that is capable of transmitting electricity. 
+  Usually to transmit electricity on a certain distance within an electric power network, or to transform it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Electric Power Transmission System</rdfs:label>
+        <rdfs:label xml:lang="pt">Sistema de Transmissão</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricReactanceProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricReactanceProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and have a quantity kind of electric reactance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Electric Reactance Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricResistanceProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricResistanceProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and have a quantity kind of electric resistance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Electric Resistance Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricSusceptanceProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricSusceptanceProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and have a quantity kind of electric susceptance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Electric Susceptance Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricalConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricalConnection"/>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricalConnectionPoint -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricalConnectionPoint"/>
+    
+
+
+    <!-- https://w3id.org/seas/Evaluation -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Evaluation">
+        <owl:disjointWith rdf:resource="https://w3id.org/seas/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ExtraHighVoltage -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ExtraHighVoltage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/VoltageProperty"/>
+        <rdfs:comment xml:lang="en">The voltage is Extra-High according to IEC 60038.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Extra-High Voltage </rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ExtraLowVoltage -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ExtraLowVoltage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/VoltageProperty"/>
+        <rdfs:comment xml:lang="en">The voltage is Extra-Low according to IEC 60038.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Extra-Low Voltage </rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/HighVoltage -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/HighVoltage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/VoltageProperty"/>
+        <rdfs:comment xml:lang="en">The voltage is High according to IEC 60038.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">High Voltage </rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/LowVoltage -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/LowVoltage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/VoltageProperty"/>
+        <rdfs:comment xml:lang="en">The voltage is Low according to IEC 60038.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Low Voltage </rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/MediumVoltage -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/MediumVoltage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/VoltageProperty"/>
+        <rdfs:comment xml:lang="en">The voltage is Medium according to IEC 60038.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Medium Voltage </rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/PercentageProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/PercentageProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantified using some percentage value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/FeatureOfInterestOntology"/>
+        <rdfs:label xml:lang="en">Percentage Property</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/PeriodicProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/PeriodicProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that evolve periodically in time.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/PeriodicSignalOntology"/>
+        <rdfs:label xml:lang="en">Periodic Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/PowerBox -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/PowerBox">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A power box (USA) or feeder pillar (UK) is a cabinet for electrical equipment, 
+                      mounted in the street and controlling the electrical supply to a number of houses in a neighborhood. (source:wikipedia)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label xml:lang="en">Power box</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/PowerInverter -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/PowerInverter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerTransformer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/connectsPrimarilyAt"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/seas/DirectCurrentConnectionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/connectsSecondarilyAt"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/seas/AlternatingCurrentConnectionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/primarilyConnectedThrough"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/seas/DirectCurrentConnection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/secondarilyConnectedThrough"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/seas/AlternatingCurrentConnection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class of electronic devices or circuitry that change direct current (DC) to alternating current (AC). (source: The Authoritative Dictionary of IEEE Standards Terms, Seventh Edition, IEEE Press, 2000, ISBN 0-7381-2601-2, page 588)</rdfs:comment>
+        <rdfs:comment>The class of electronic devices or circuitry that change direct current (DC) to alternating current (AC). (source: The Authoritative Dictionary of IEEE Standards Terms, Seventh Edition, IEEE Press, 2000, ISBN 0-7381-2601-2, page 588)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/PhotovoltaicOntology"/>
+        <rdfs:label xml:lang="en">Power Inverter</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/Property -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/isPropertyOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An observable or operable Quality of an Event or Object. That is, not a quality of an abstract entity as is also allowed by DUL&apos;s Quality, but rather an aspect of an entity that is intrinsic to and cannot exist without the entity and is observable by a sensor, or operable by an actuator. 
+
+On the other hand, a property may also itself be a feature of interest. For example if a fridge uses alternative current energy, then several aspects of its energy consumption property may be quantified. Examples of such aspects include:
+
+- the active power consumption;
+- the reactive power consumption;
+- the phase of voltage relative to current;
+- the frequency;
+- the minimal operating value of the frequency;
+- the number of occurences of unusual values.
+
+These are different properties of the same property:
+
+```
+ex:activePower a owl:ObjectProperty ;
+  rdfs:subPropertyOf seas:hasProperty ;
+  rdfs:domain seas:PowerProperty ;
+  rdfs:range seas:PowerProperty .
+
+&lt;fridge/1/consumption&gt; a seas:FeatureOfInterest ;
+  ex:activePower &lt;fridge/1/consumption/activePower&gt; .
+```
+
+</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/FeatureOfInterestOntology"/>
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/SolarArray -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/SolarArray">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerProducer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/seas/subElectricPowerSystemOf"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/SolarPanel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Solar arrays consist of one or many solar panels.</rdfs:comment>
+        <rdfs:comment>Solar arrays consist of one or many solar panels.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/PhotovoltaicOntology"/>
+        <rdfs:label xml:lang="en">Solar Array</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/SolarCell -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/SolarCell">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerProducer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/seas/subElectricPowerSystemOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/seas/SolarModule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Solar cells belong a solar module.</rdfs:comment>
+        <rdfs:comment>Solar cells belong a solar module.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/PhotovoltaicOntology"/>
+        <rdfs:label xml:lang="en">Solar Cell</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/SolarModule -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/SolarModule">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerProducer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/seas/subElectricPowerSystemOf"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/SolarCell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Solar modules consist of one or many solar cells.</rdfs:comment>
+        <rdfs:comment>Solar modules consist of one or many solar cells.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/PhotovoltaicOntology"/>
+        <rdfs:label xml:lang="en">Solar Module</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/SolarPanel -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/SolarPanel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerProducer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/seas/subElectricPowerSystemOf"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/seas/SolarModule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Solar panels consist of one or many solar modules.</rdfs:comment>
+        <rdfs:comment>Solar panels consist of one or many solar modules.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/PhotovoltaicOntology"/>
+        <rdfs:label xml:lang="en">Solar Panel</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/VoltageProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/VoltageProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+        <rdfs:comment xml:lang="en">The class of properties that are quantifiable and use a quantity dimension of electric potential.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ElectricPowerSystemOntology"/>
+        <rdfs:label>Voltage Property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Country -->
+
+    <owl:Class rdf:about="https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Country">
+        <rdfs:subClassOf rdf:resource="https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Location"/>
+        <dc:description>A geopolitical entity representing a country or dependent territory.</dc:description>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Location -->
+
+    <owl:Class rdf:about="https://www.omg.org/spec/LCC/Countries/CountryRepresentation/Location">
+        <dc:description>A place or position in time and/or space, including virtual place.</dc:description>
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
